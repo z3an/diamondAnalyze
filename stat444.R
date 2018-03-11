@@ -1,0 +1,5 @@
+diamondData = read.csv("/Users/anzepeng/Desktop/stat444/winter/diamondAnalyze/diamondsSample.csv")
+diamond = na.omit(diamondData)
+xlim = extendrange(diamond$carat)
+ylim = extendrange(diamond$price)
+plot(diamond$carat,diamond$price, xlim=xlim, ylim=ylim)
